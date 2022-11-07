@@ -1,0 +1,15 @@
+const express = requier('express')
+
+const app = express()
+
+app.get('/',(req, res) => {
+    res.send('hello world')
+})
+app.get('/callback',(req, res) => {
+res.send('it should have worked')
+})
+
+
+app.listen(5000, () => {
+    console.log('we are running on port 5000')
+})
